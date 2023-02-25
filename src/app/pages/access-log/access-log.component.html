@@ -1,0 +1,20 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th>Date and time of access</th>
+        <th>User name</th>
+        <th>Access level</th>
+        <th>Department</th>
+        <th>Action performed</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let log of accessLogs">
+        <td>{{ log.timestamp | date: 'medium' }}</td>
+        <td>{{ log.firstName }}</td>
+        <td>{{ log.accessLevel }}</td>
+        <td>{{ log.department }}</td>
+        <td>{{ log.actionPerformed }}</td>
+      </tr>
+    </tbody>
+  </table>

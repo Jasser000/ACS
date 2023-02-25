@@ -1,0 +1,22 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Job Title</th>
+        <th>Position</th>
+        <th>Security Level</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let personnel of PERSONNEL_DATA">
+        <td>{{ personnel.id }}</td>
+        <td>{{ personnel.firstName }}</td>
+        <td>{{ personnel.lastName }}</td>
+        <td>{{ personnel.department }}</td>
+        <td>{{ personnel.jobTitle }}</td>
+        <td>{{ personnel.accessLevel }}</td>
+      </tr>
+    </tbody>
+  </table>
